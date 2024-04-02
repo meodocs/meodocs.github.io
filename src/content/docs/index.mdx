@@ -1,0 +1,25 @@
+---
+title: Republic Of Lunar
+description: 欢迎来到我的小窝 ꒰ঌ( ⌯' '⌯)໒꒱
+template: splash
+hero:
+  tagline: 欢迎来到我的小窝 ꒰ঌ( ⌯' '⌯)໒꒱
+  actions:
+    - text: 启动
+      link: /welcome/1-welcome
+      icon: right-arrow
+      variant: primary
+---
+
+import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+<LinkCard
+  title="Arch Linux"
+  description="了解什么是Arch Linux，如何安装等"
+  href="/arch/1-what_is_arch"
+/>
+
+<CardGrid>
+  <LinkCard title="什么是 ArchLinux?" href="/arch/1-what_is_arch" />
+  <LinkCard title="如何安装 ArchLinux?" href="/arch/3-install_arch" />
+</CardGrid>
