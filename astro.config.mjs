@@ -18,7 +18,7 @@ export default defineConfig({
 			},
 			social: {
 				github: 'https://github.com/lunarlands',
-				gitlab: 'https://github.com/l.r',
+				gitlab: 'https://gitlab.com/l.r',
 			},
 			sidebar: [
 				{
