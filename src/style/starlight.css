@@ -28,3 +28,6 @@
     --sl-color-gray-7: #f9f5f5;
     --sl-color-black: #ffffff;
 }
+.starlight-aside{
+    border-radius: 12px;
+}

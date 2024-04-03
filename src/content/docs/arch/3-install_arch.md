@@ -8,8 +8,9 @@ title: 安装 Arch Linux
 
 如果您没有Linux基础，建议不要安装ArchLinux。
 
-**警告!**
+:::danger[警告!]
 在查看本教程之前，请确定您是UEFI启动。
+:::
 
 
 
