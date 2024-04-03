@@ -12,6 +12,19 @@ hero:
 ---
 
 import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
+ 
+
+
+<LinkCard
+  title="Starlight"
+  description="了解什么是Starlight，如何部署等"
+  href="/starlight/1-install_arch"
+/>
+
+<CardGrid>
+<LinkCard title="如何将 Starlight 部署到 Github Pages 上?" href="/starlight/2-gh-pages" />
+<LinkCard title="如何将 Starlight 部署到 Cloudflare Pages 上?" href="/starlight/3-cloudflare" />
+</CardGrid>
 
 <LinkCard
   title="Arch Linux"
@@ -23,3 +36,4 @@ import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
   <LinkCard title="什么是 ArchLinux?" href="/arch/1-what_is_arch" />
   <LinkCard title="如何安装 ArchLinux?" href="/arch/3-install_arch" />
 </CardGrid>
+

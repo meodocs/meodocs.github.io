@@ -9,6 +9,13 @@ export default defineConfig({
 				'./src/style/starlight.css',
 			],
 			title: 'Republic Of Lunar',
+			defaultLocale: 'root',
+			locales: {
+				root: {
+					label: '简体中文',
+					lang: 'zh-CN',
+				},
+			},
 			social: {
 				github: 'https://github.com/lunarlands',
 				gitlab: 'https://github.com/l.r',
@@ -20,9 +27,14 @@ export default defineConfig({
 				},
 				{
 					label: 'Chapter II',
+					autogenerate: { directory: 'starlight' },
+				},
+				{
+					label: 'Chapter III',
 					badge: 'Updating',
 					autogenerate: { directory: 'arch' },
 				},
+				
 			],
 		}),
 	],

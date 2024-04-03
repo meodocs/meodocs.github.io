@@ -15,9 +15,9 @@
 
 /* Light mode colors. */
 :root[data-theme='light'] {
-    --sl-color-accent-low: #ffc8be;
-    --sl-color-accent: #c90e00;
-    --sl-color-accent-high: #640300;
+    --sl-color-accent-low: #f0cec8;
+    --sl-color-accent: #b43e30;
+    --sl-color-accent-high: #532019;
     --sl-color-white: #1d1715;
     --sl-color-gray-1: #302321;
     --sl-color-gray-2: #423432;
@@ -28,6 +28,8 @@
     --sl-color-gray-7: #f9f5f5;
     --sl-color-black: #ffffff;
 }
+
+/* User Configs */
 .starlight-aside{
     border-radius: 12px;
     border: none;
