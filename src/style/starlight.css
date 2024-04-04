@@ -36,13 +36,13 @@
 }
 
 @font-face {
-    src: url(./fonts/VictorMonoNerdFont-Medium.ttf);
-    font-family: 'Victor NF Medium';
+    src: url(./fonts/VictorMonoNerdFont-Regular.ttf);
+    font-family: 'Victor NF Regular';
 }
 
 @font-face {
-    src: url(./fonts/VictorMonoNerdFont-MediumItalic.ttf);
-    font-family: 'Victor NF Medium Italic';
+    src: url(./fonts/VictorMonoNerdFont-Italic.ttf);
+    font-family: 'Victor NF Italic';
 }
 
 @font-face {
@@ -51,5 +51,5 @@
 }
 
 *{
-    --sl-font: 'Victor NF Medium Italic';
+    --sl-font: 'Victor NF Italic';
 }
