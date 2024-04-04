@@ -46,10 +46,19 @@
 }
 
 @font-face {
+    src: url(./fonts/VictorMonoNerdFont-Medium.ttf);
+    font-family: 'Victor NF Medium';
+}
+
+@font-face {
+    src: url(./fonts/VictorMonoNerdFont-MediumItalic.ttf);
+    font-family: 'Victor NF Medium Italic';
+}
+@font-face {
     src: url(./fonts/FiraCode-Regular.ttf);
     font-family: 'FiraCode Regular';
 }
 
 *{
-    --sl-font: 'Victor NF Italic';
+    --sl-font: 'Victor NF Medium Italic';
 }
