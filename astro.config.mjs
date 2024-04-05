@@ -9,6 +9,9 @@ export default defineConfig({
 				'./src/style/starlight.css',
 			],
 			title: 'Republic Of Lunar',
+			editLink: {
+				baseUrl: 'https://github.com/lunarlands/lunarlands.github.io/edit/main/docs/',
+			},
 			defaultLocale: 'root',
 			locales: {
 				root: {
