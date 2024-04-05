@@ -10,7 +10,7 @@ export default defineConfig({
 			],
 			title: 'Republic Of Lunar',
 			editLink: {
-				baseUrl: 'https://github.com/lunarlands/lunarlands.github.io/edit/main/docs/',
+				baseUrl: 'https://github.com/lunarlands/lunarlands.github.io/edit/main/',
 			},
 			defaultLocale: 'root',
 			locales: {
