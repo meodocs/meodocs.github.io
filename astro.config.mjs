@@ -25,7 +25,7 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: "Volume I | Guide",
+					label: "Volume I | Tutorials",
 					items: [
 						{
 							label: 'Chapter I',
