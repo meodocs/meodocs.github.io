@@ -22,19 +22,23 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Chapter I',
-					autogenerate: { directory: 'welcome' },
+					label: "Volume I | Guide",
+					items: [
+						{
+							label: 'Chapter I',
+							autogenerate: { directory: 'welcome' },
+						},
+						{
+							label: 'Chapter II',
+							autogenerate: { directory: 'starlight' },
+						},
+						{
+							label: 'Chapter III',
+							badge: 'Updating',
+							autogenerate: { directory: 'arch' },
+						},
+					],
 				},
-				{
-					label: 'Chapter II',
-					autogenerate: { directory: 'starlight' },
-				},
-				{
-					label: 'Chapter III',
-					badge: 'Updating',
-					autogenerate: { directory: 'arch' },
-				},
-				
 			],
 		}),
 	],
