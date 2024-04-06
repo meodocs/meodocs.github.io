@@ -92,3 +92,19 @@
 *{
     --sl-font: 'Victor NF Medium Italic';
 }
+
+a{
+    text-decoration: none;
+}
+
+.astro-shgwsyvj {
+    font-size: 30px;
+}
+
+.sl-badge.default.astro-kwrzkga6{
+    font-family: 'Victor NF Medium Italic';
+}
+
+li{
+    list-style-type: none;
+}
