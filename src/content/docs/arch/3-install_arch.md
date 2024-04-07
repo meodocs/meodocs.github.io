@@ -113,6 +113,8 @@ pacstrap /mnt base base-devel linux linux-firmware btrfs-progs networkmanager vi
 
 ```shell
 genfstab -U /mnt > /mnt/etc/fstab
+sudo nano /mnt/etc/fstab
+# 删掉subvolid=...,
 ```
 
    III. 切换根目录
