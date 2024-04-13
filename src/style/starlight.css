@@ -108,3 +108,9 @@ a{
 li{
     list-style-type: none;
 }
+
+.header.astro-oqlf5xyc {
+    background-color: #ffffff00;
+    backdrop-filter: blur(10px);
+    border: none;
+}
