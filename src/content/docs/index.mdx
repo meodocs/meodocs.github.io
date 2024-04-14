@@ -9,9 +9,13 @@ hero:
       link: /welcome/1-welcome
       icon: right-arrow
       variant: primary
+    - text: 文件列表
+      link: /welcome/3-download
+      icon: external
 ---
 
 import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
+
 
 ### # Starlight
 <LinkCard
@@ -25,6 +29,9 @@ import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
 <LinkCard title="如何将 Starlight 部署到 Cloudflare Pages 上?" href="/starlight/3-cloudflare" />
 </CardGrid>
 
+
+
+
 ### # Arch Linux
 <LinkCard
   title="Arch Linux"
@@ -35,6 +42,4 @@ import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
 <CardGrid>
   <LinkCard title="什么是 ArchLinux?" href="/arch/1-what_is_arch" />
   <LinkCard title="如何安装 ArchLinux?" href="/arch/3-install_arch" />
-  <LinkCard title="获取 ArchISO 文件 (清华源)" href="https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso" />
-  <LinkCard title="获取 ArchISO 文件 (中科大)" href="https://mirrors.ustc.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso" />
 </CardGrid>
