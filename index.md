@@ -5,6 +5,7 @@ layout: home
 hero:
   name: "Republic Of Lunar"
   tagline: 欢迎来到我的小窝 ꒰ঌ( ⌯' '⌯)໒꒱
+  image: "https://vitest.dev/logo-shadow.svg"
   actions:
     - theme: brand
       text: 阅读 Volume 1 | Tutorials
