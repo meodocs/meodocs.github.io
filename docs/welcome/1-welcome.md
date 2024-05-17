@@ -18,17 +18,8 @@
 - [Github Pages](https://pages.github.com/)
 - [Cloudflare Pages](https://pages.cloudflare.com)
 
-网站基于
-- [Starlight](https://starlight.astro.build/)
-- ~~VitePress~~
-:::tip[关于 VitePress]
-非常感谢 VitePress 之前对本站的付出！由于我(作者)在查看Hyprland的配置的时候来到了[这个网站](https://end-4.github.io/dots-hyprland-wiki/)，看起来很好看，于是我便开始了研究如何安装并使用。
-在学会如何部署到Github Pages和Cloudflare Pages后，我选择了用 Starlight 替换 VitePress。
-:::
-
 其他 (本站的灵感、一些内容摘抄点)
 - [Arch Wiki](https://wiki.archlinux.org/)
-- [Starlight](https://starlight.astro.build/)
 - [Arch Linux 简明指南](https://arch.icekylin.online)
 
 特别鸣谢
