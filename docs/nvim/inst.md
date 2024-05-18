@@ -17,7 +17,7 @@ sudo chmod 777 -R ~/.config/nvim
 sudo rm -rf ~/.config/nvim/Preview ~/.config/nvim/*.sh ~/.config/nvim/.git 
 sudo rm -rf ~/.config/nvim/*.MD  
 sudo rm -rf ~/.config/nvim/LICENSE
-sudo nvim
+nvim
 ```
 :::
 ```bash
