@@ -22,6 +22,9 @@
 - [Arch Wiki](https://wiki.archlinux.org/)
 - [Arch Linux 简明指南](https://arch.icekylin.online)
 
+Logo 来源
+- [Vitest](https://vitest.dev/)
+
 特别鸣谢
 - [Republic Of Lunar](/)
 - 在看文档的你！
