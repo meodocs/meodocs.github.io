@@ -9,13 +9,15 @@ export default defineConfig({
       provider: "local",
     },
     editLink: {
-      pattern: 'https://github.com/lunarlands/lunarlands.github.io/edit/main/:path'
+      pattern:
+        "https://github.com/lunarlands/lunarlands.github.io/edit/main/:path",
     },
     logo: "https://vitest.dev/logo-shadow.svg",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "主页", link: "/" },
       { text: "Arch Linux", link: "/docs/arch/arch.md" },
+      { text: "TR Neovim", link: "/docs/nvim/nvim.md" },
     ],
 
     sidebar: [
@@ -50,6 +52,20 @@ export default defineConfig({
           {
             text: "终端",
             link: "/docs/arch/5-shell.md",
+          },
+        ],
+      },
+      {
+        text: "Chapter III",
+        collapsed: false,
+        items: [
+          {
+            text: "TR Neovim 配置介绍",
+            link: "/docs/nvim/intro.md",
+          },
+          {
+            text: "安装 TR Neovim",
+            link: "/docs/nvim/inst.md",
           },
         ],
       },

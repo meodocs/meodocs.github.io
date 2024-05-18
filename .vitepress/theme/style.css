@@ -267,21 +267,7 @@ img.resizable-img {
     min-height: unset;
   }
 }
-
 /* .vitepress\theme\style\var.css */
-/* 提示框背景颜色 */
-:root {
-  --vp-custom-block-tip-bg: var(--vp-c-green-soft);
-}
-
-/* 提示框 */
-.custom-block.tip {
-  border-color: var(--vp-c-green-2);
-}
-
-/* 警告框 */
-.custom-block.warning {
-  /* border-co/* .vitepress\theme\style\var.css */
 /* 提示框背景颜色 */
 :root {
   --vp-custom-block-tip-bg: var(--vp-c-green-soft);
@@ -302,15 +288,8 @@ img.resizable-img {
 .custom-block.danger {
   /* border-color: #f43f5e; */
   border-color: var(--vp-c-red-2);
-}lor: #d97706; */
-  border-color: var(--vp-c-yellow-2);
 }
 
-/* 危险框 */
-.custom-block.danger {
-  /* border-color: #f43f5e; */
-  border-color: var(--vp-c-red-2);
-}
 
 a{
   text-decoration: none !important;
