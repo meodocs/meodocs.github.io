@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Republic Of Lunar",
-  description: "A VitePress Site",
+  description: "Republic Of Lunar",
   themeConfig: {
     search: {
       provider: "local",
@@ -17,7 +17,6 @@ export default defineConfig({
     nav: [
       { text: "主页", link: "/" },
       { text: "Arch Linux", link: "/docs/arch/arch.md" },
-      { text: "TR Neovim", link: "/docs/nvim/nvim.md" },
     ],
 
     sidebar: [
@@ -52,20 +51,6 @@ export default defineConfig({
           {
             text: "终端",
             link: "/docs/arch/5-shell.md",
-          },
-        ],
-      },
-      {
-        text: "Chapter III",
-        collapsed: false,
-        items: [
-          {
-            text: "TR Neovim 配置介绍",
-            link: "/docs/nvim/intro.md",
-          },
-          {
-            text: "安装 TR Neovim",
-            link: "/docs/nvim/inst.md",
           },
         ],
       },
