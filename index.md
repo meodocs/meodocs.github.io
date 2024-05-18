@@ -4,11 +4,11 @@ layout: home
 
 hero:
   name: "Republic Of Lunar"
-  tagline: 欢迎来到我的小窝 ꒰ঌ( ⌯' '⌯)໒꒱
+  tagline: 欢迎来到我的小窝  ꒰ঌ( ⌯' '⌯)໒꒱
   image: "https://vitest.dev/logo-shadow.svg"
   actions:
     - theme: brand
-      text: 阅读 Volume 1 | Tutorials
+      text: 阅读
       link: /docs/welcome/1-welcome.md
 
 features:
@@ -22,4 +22,3 @@ features:
     icon: Ω
     details: 刘长卿《别严士元》
 ---
-
