@@ -21,6 +21,14 @@
 其他 (本站的灵感、一些内容摘抄点)
 - [Arch Wiki](https://wiki.archlinux.org/)
 - [Arch Linux 简明指南](https://arch.icekylin.online)
+- **<< Archlinux 真的适合我吗 >>** 为上方网站内的文章整理后的内容，使用原作者的版权信息
+
+允许复制文章的网站
+- [猫狗小铺](https://catdog-xiaopu.com)
+- 一个不愿意透露网站的网站 qwq
+
+友情链接
+- [猫狗小铺](https://catdog-xiaopu.com)
 
 Logo 来源
 - [Vitest](https://vitest.dev/)

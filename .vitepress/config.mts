@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,6 +7,10 @@ export default defineConfig({
   themeConfig: {
     search: {
       provider: "local",
+    },
+    footer: {
+      message: "未经过作者同意并公示, 严禁复制内容。",
+      copyright: "Copyright © 2024 Republic Of Lunar",
     },
     editLink: {
       pattern:
