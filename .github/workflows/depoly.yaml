@@ -55,15 +55,14 @@ jobs:
   deploy:
     environment:
       name: github-pages
+      uses: actions/upload-artifact@v4
+        with:
+          path: .vitepress/dist
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          path: .vitepress/dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
