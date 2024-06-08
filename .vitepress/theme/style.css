@@ -1,271 +1,359 @@
 /**
- * Colors
+ * Colors Base
+ *
+ * These are the pure base color presets. Most of the time, you should not be
+ * using these colors directly in the theme but rather use "Colors Theme"
+ * instead because those are "Theme (light or dark)" dependant.
  * -------------------------------------------------------------------------- */
-
-:root {
-  --vp-c-brand-1: #52730d;
-  --vp-c-brand-2: #57791b;
-  --vp-c-brand-3: #506e10;
-  --vp-c-sponsor: #ca2971;
-  --vitest-c-sponsor-hover: #c13071;
+ :root {
+  --md-ref-palette-primary30: #004494;
+  --md-ref-palette-primary35: #004faa;
+  --md-ref-palette-primary50: #2b74e2;
+  --md-ref-palette-primary60: #4d8efe;
+  /* light */
+  --md-sys-color-primary-light: #005ac1;
+  --md-sys-color-background-light: #fefbff;
+  --md-sys-color-on-surface-variant-light: #44474f;
+  --md-sys-color-outline-light: #74777f;
+  /* dark */
+  --md-sys-color-background-dark: #1b1b1f;
+  --md-sys-color-on-surface-variant-dark: #c4c6d0;
+  --md-sys-color-outline-dark: #8e9099;
 }
 
-.dark {
-  --vp-c-brand-1: #add467;
-  --vp-c-brand-2: #a7cc66;
-  --vp-c-brand-3: #acd268;
-  --vp-c-sponsor: #ee4e95;
-  --vitest-c-sponsor-hover: #e51370;
-}
+ :root {
+  --vp-c-white: var(--md-sys-color-background-light);
+  --vp-c-black: var(--md-sys-color-background-dark);
 
+  --vp-c-gray: #8e8e93;
+
+  --vp-c-text-light-1: var(--md-sys-color-on-surface-variant-light);
+  --vp-c-text-light-2: var(--md-sys-color-outline-light);
+  --vp-c-text-light-3: rgba(60, 60, 67, 0.33);
+
+  --vp-c-text-dark-1: var(--md-sys-color-on-surface-variant-dark);
+  --vp-c-text-dark-2: var(--md-sys-color-outline-dark);
+  --vp-c-text-dark-3: rgba(235, 235, 245, 0.38);
+
+  --vp-c-green: #10b981;
+  --vp-c-green-light: #34d399;
+  --vp-c-green-lighter: #6ee7b7;
+  --vp-c-green-dark: #059669;
+  --vp-c-green-darker: #047857;
+  --vp-c-green-dimm-1: rgba(16, 185, 129, 0.05);
+  --vp-c-green-dimm-2: rgba(16, 185, 129, 0.2);
+  --vp-c-green-dimm-3: rgba(16, 185, 129, 0.5);
+
+  --vp-c-yellow: #eab308;
+  --vp-c-yellow-light: #facc15;
+  --vp-c-yellow-lighter: #fde047;
+  --vp-c-yellow-dark: #ca8a04;
+  --vp-c-yellow-darker: #a16207;
+  --vp-c-yellow-dimm-1: rgba(234, 179, 8, 0.05);
+  --vp-c-yellow-dimm-2: rgba(234, 179, 8, 0.2);
+  --vp-c-yellow-dimm-3: rgba(234, 179, 8, 0.5);
+
+  --vp-c-red: #f43f5e;
+  --vp-c-red-light: #fb7185;
+  --vp-c-red-lighter: #fda4af;
+  --vp-c-red-dark: #e11d48;
+  --vp-c-red-darker: #be123c;
+  --vp-c-red-dimm-1: rgba(244, 63, 94, 0.05);
+  --vp-c-red-dimm-2: rgba(244, 63, 94, 0.2);
+  --vp-c-red-dimm-3: rgba(244, 63, 94, 0.5);
+
+  --vp-c-sponsor: #db2777;
+}
 
 /**
- * Component: Custom Block
+ * Colors Theme
  * -------------------------------------------------------------------------- */
+
 :root {
-  --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
-  --vp-custom-block-danger-code-bg: #a79fa029;
-  --vitest-custom-block-tip-code-text: #4a680c;
-  --vitest-custom-block-info-code-text: #394f0c
+  --vp-c-bg: var(--vp-c-white);
+
+  --vp-c-bg-elv: var(--vp-c-white);
+  --vp-c-bg-elv-up: var(--vp-c-white);
+  --vp-c-bg-elv-down: #f6f6f7;
+  --vp-c-bg-elv-mute: #f6f6f7;
+
+  --vp-c-bg-soft: #f6f6f7;
+  --vp-c-bg-soft-up: var(--vp-c-white);
+  --vp-c-bg-soft-down: #e3e3e5;
+  --vp-c-bg-soft-mute: #e3e3e5;
+
+  --vp-c-bg-alt: #f6f6f7;
+
+  --vp-c-border: rgba(60, 60, 67, 0.29);
+  --vp-c-divider: rgba(60, 60, 67, 0.12);
+  --vp-c-gutter: rgba(60, 60, 67, 0.12);
+
+  --vp-c-neutral: var(--vp-c-black);
+  --vp-c-neutral-inverse: var(--vp-c-white);
+
+  --vp-c-text-1: var(--vp-c-text-light-1);
+  --vp-c-text-2: var(--vp-c-text-light-2);
+  --vp-c-text-3: var(--vp-c-text-light-3);
+
+  --vp-c-text-inverse-1: var(--vp-c-text-dark-1);
+  --vp-c-text-inverse-2: var(--vp-c-text-dark-2);
+  --vp-c-text-inverse-3: var(--vp-c-text-dark-3);
+
+  --vp-c-text-code: #476582;
+
+  --vp-c-brand: var(--md-sys-color-primary-light);
+  --vp-c-brand-light: var(--md-ref-palette-primary50);
+  --vp-c-brand-lighter: var(--md-ref-palette-primary60);
+  --vp-c-brand-dark: var(--md-ref-palette-primary35);
+  --vp-c-brand-darker: var(--md-ref-palette-primary30);
+
+  --vp-c-mute: #f6f6f7;
+  --vp-c-mute-light: #f9f9fc;
+  --vp-c-mute-lighter: var(--vp-c-white);
+  --vp-c-mute-dark: #e3e3e5;
+  --vp-c-mute-darker: #d7d7d9;
 }
 
 .dark {
-  --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
-  --vp-custom-block-danger-code-bg: #6c6a6a2b;
+  --vp-c-bg: var(--vp-c-black);
+
+  --vp-c-bg-elv: #252529;
+  --vp-c-bg-elv-up: #313136;
+  --vp-c-bg-elv-down: #1e1e20;
+  --vp-c-bg-elv-mute: #313136;
+
+  --vp-c-bg-soft: #252529;
+  --vp-c-bg-soft-up: #313136;
+  --vp-c-bg-soft-down: #1e1e20;
+  --vp-c-bg-soft-mute: #313136;
+
+  --vp-c-bg-alt: #161618;
+
+  --vp-c-border: rgba(82, 82, 89, 0.68);
+  --vp-c-divider: rgba(82, 82, 89, 0.32);
+  --vp-c-gutter: var(--vp-c-black);
+
+  --vp-c-neutral: var(--vp-c-white);
+  --vp-c-neutral-inverse: var(--vp-c-black);
+
+  --vp-c-text-1: var(--vp-c-text-dark-1);
+  --vp-c-text-2: var(--vp-c-text-dark-2);
+  --vp-c-text-3: var(--vp-c-text-dark-3);
+
+  --vp-c-text-inverse-1: var(--vp-c-text-light-1);
+  --vp-c-text-inverse-2: var(--vp-c-text-light-2);
+  --vp-c-text-inverse-3: var(--vp-c-text-light-3);
+
+  --vp-c-text-code: #c9def1;
+
+  --vp-c-mute: #313136;
+  --vp-c-mute-light: #3a3a3c;
+  --vp-c-mute-lighter: #505053;
+  --vp-c-mute-dark: #2c2c30;
+  --vp-c-mute-darker: #252529;
 }
+
+/**
+ * Typography
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-font-family-base: "Inter var", "Inter", "Segoe UI Emoji", ui-sans-serif,
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --vp-font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/**
+ * Shadows
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --vp-shadow-2: 0 3px 12px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.07);
+  --vp-shadow-3: 0 12px 32px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.08);
+  --vp-shadow-4: 0 14px 44px rgba(0, 0, 0, 0.12), 0 3px 9px rgba(0, 0, 0, 0.12);
+  --vp-shadow-5: 0 18px 56px rgba(0, 0, 0, 0.16), 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+/**
+ * Z-indexes
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-z-index-local-nav: 10;
+  --vp-z-index-nav: 20;
+  --vp-z-index-layout-top: 30;
+  --vp-z-index-backdrop: 40;
+  --vp-z-index-sidebar: 50;
+  --vp-z-index-footer: 60;
+}
+
+/**
+ * Icons
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-icon-copy: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2'/%3E%3C/svg%3E");
+  --vp-icon-copied: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4'/%3E%3C/svg%3E");
+}
+
+/**
+ * Layouts
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-layout-max-width: 1440px;
+}
+
+/**
+ * Component: Code
+ * -------------------------------------------------------------------------- */
 
 /**
  * Component: Button
  * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-button-brand-border: var(--vp-c-brand-lighter);
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-button-brand-hover-border: var(--vp-c-brand-lighter);
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-dark);
+  --vp-button-brand-active-border: var(--vp-c-brand-lighter);
+  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-bg: var(--vp-c-brand-darker);
+
+  --vp-button-alt-border: var(--vp-c-border);
+  --vp-button-alt-text: var(--vp-c-neutral);
+  --vp-button-alt-bg: var(--vp-c-mute);
+  --vp-button-alt-hover-border: var(--vp-c-border);
+  --vp-button-alt-hover-text: var(--vp-c-neutral);
+  --vp-button-alt-hover-bg: var(--vp-c-mute-dark);
+  --vp-button-alt-active-border: var(--vp-c-border);
+  --vp-button-alt-active-text: var(--vp-c-neutral);
+  --vp-button-alt-active-bg: var(--vp-c-mute-darker);
+
+  --vp-button-sponsor-border: var(--vp-c-gray-light-3);
+  --vp-button-sponsor-text: var(--vp-c-text-light-2);
+  --vp-button-sponsor-bg: transparent;
+  --vp-button-sponsor-hover-border: var(--vp-c-sponsor);
+  --vp-button-sponsor-hover-text: var(--vp-c-sponsor);
+  --vp-button-sponsor-hover-bg: transparent;
+  --vp-button-sponsor-active-border: var(--vp-c-sponsor);
+  --vp-button-sponsor-active-text: var(--vp-c-sponsor);
+  --vp-button-sponsor-active-bg: transparent;
+}
+
 .dark {
-  --vp-button-brand-text: #243600;
-  --vp-button-brand-active-text: #243600;
-  --vp-button-brand-hover-text: #243600;
+  --vp-button-sponsor-border: var(--vp-c-gray-dark-1);
+  --vp-button-sponsor-text: var(--vp-c-text-dark-2);
+}
+
+
+/**
+ * Component: Input
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-input-border-color: var(--vp-c-border);
+  --vp-input-bg-color: var(--vp-c-bg-alt);
+  --vp-input-hover-border-color: var(--vp-c-gray);
+
+  --vp-input-switch-bg-color: var(--vp-c-mute);
+}
+
+/**
+ * Component: Nav
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-nav-height: 64px;
+  --vp-nav-bg-color: var(--vp-c-bg);
+  --vp-nav-screen-bg-color: var(--vp-c-bg);
+}
+
+/**
+ * Component: Local Nav
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-local-nav-bg-color: var(--vp-c-bg);
+}
+
+/**
+ * Component: Sidebar
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-sidebar-width: 272px;
+  --vp-sidebar-bg-color: var(--vp-c-bg-alt);
+}
+
+/**
+ * Colors Backdrop
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-backdrop-bg-color: rgba(0, 0, 0, 0.6);
 }
 
 /**
  * Component: Home
  * -------------------------------------------------------------------------- */
 
- :root {
+:root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #86b91a 30%,
-    #edd532
+  --vp-home-hero-name-background: linear-gradient(
+    -225deg,
+    #22e1ff 0%,
+    #1d8fe1 48%,
+    #625eb1 100%
   );
   --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #86b91a60 30%,
-    #edd53260
+    -225deg,
+    #22e1ff 45%,
+    #1d8fe1 50%,
+    #625eb1 55%
   );
-  --vp-home-hero-image-filter: blur(30px);
+  --vp-home-hero-image-filter: blur(128px);
 }
-
-@media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
-  }
-}
-
-@media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(72px);
-  }
-}
-
 
 /**
- * Component: Algolia
+ * Component: Badge
  * -------------------------------------------------------------------------- */
 
-.DocSearch {
-  --docsearch-primary-color: var(--vp-c-brand) !important;
+:root {
+  --vp-badge-info-border: var(--vp-c-border);
+  --vp-badge-info-text: var(--vp-c-text-2);
+  --vp-badge-info-bg: var(--vp-c-bg-soft);
+
+  --vp-badge-tip-border: var(--vp-c-green-dark);
+  --vp-badge-tip-text: var(--vp-c-green);
+  --vp-badge-tip-bg: var(--vp-c-green-dimm-1);
+
+  --vp-badge-warning-border: var(--vp-c-yellow-dark);
+  --vp-badge-warning-text: var(--vp-c-yellow);
+  --vp-badge-warning-bg: var(--vp-c-yellow-dimm-1);
+
+  --vp-badge-danger-border: var(--vp-c-red-dark);
+  --vp-badge-danger-text: var(--vp-c-red);
+  --vp-badge-danger-bg: var(--vp-c-red-dimm-1);
 }
 
-.vp-sponsor-grid.big .vp-sponsor-grid-image {
-  max-height: 96px;
-}
+/**
+ * Component: CarbonAds
+ * -------------------------------------------------------------------------- */
 
-.vp-sponsor-grid.mini .vp-sponsor-grid-image[alt='Bit'] {
-  max-height: 48px;
-}
-
-.vp-sponsor-grid.big .vp-sponsor-grid-image[alt='Vite'] {
-  max-height: 65px;
-}
-
-.vp-sponsor-grid.big .vp-sponsor-grid-image[alt='Zammad'] {
-  max-height: 74px;
-}
-
-.dark [img-light] {
-  display: none;
-}
-
-html:not(.dark) [img-dark] {
-  display: none;
-}
-
-/* Overrides */
-
-.sp .sp-link.link:hover,
-.sp .sp-link.link:focus {
-  background-color: var(--vitest-c-sponsor-hover) !important;
-}
-
-/* outline styles for buttons and VPButton anchors */
-button:focus,
-button:focus-visible,
-.DocSearch-Button:focus,
-.DocSearch-Button:focus-visible,
-a:focus-visible,
-a:focus {
-  border-radius: 2px;
-  outline: 2px solid var(--vp-c-text-1);
-}
-
-a:focus:not(:focus-visible),
-button:focus:not(:focus-visible) {
-  outline: none !important;
-}
-
-/* custom block styles */
-html:not(.dark) .custom-block.tip code {
-  color: var(--vitest-custom-block-tip-code-text) !important;
-}
-html:not(.dark) .custom-block.info code {
-  color: var(--vitest-custom-block-info-code-text) !important;
-}
-.custom-block.tip a:hover,
-.vp-doc .custom-block.tip a:hover > code {
-  color: var(--vp-c-brand-1) !important;
-  opacity: 1;
-}
-.custom-block.info a:hover,
-.vp-doc .custom-block.info a:hover > code {
-  color: var(--vp-c-brand-1) !important;
-  opacity: 1;
-}
-html:not(.dark) .custom-block.info a:hover,
-html:not(.dark) .vp-doc .custom-block.info a:hover > code {
-  color: var(--vitest-custom-block-info-code-text) !important;
-  opacity: 1;
-}
-.custom-block.warning a:hover,
-.vp-doc .custom-block.warning a:hover > code {
-  color: var(--vp-c-warning-1) !important;
-  opacity: 1;
-}
-.custom-block.danger a:hover,
-.vp-doc .custom-block.danger a:hover > code {
-  color: var(--vp-c-danger-1) !important;
-  opacity: 1;
-}
-
-/* search # styles */
-:not(.dark) .title-icon {
-  opacity: 1 !important;
-}
-.dark .title-icon {
-  opacity: 0.67 !important;
-}
-
-.VPSocialLink {
-  transform: scale(0.9);
-}
-
-.vp-doc a {
-  text-decoration-style: dotted;
-}
-.custom-block a:focus,
-.custom-block a:active,
-.custom-block a:hover,
-.custom-block a:active,
-.vp-doc a:focus,
-.vp-doc a:active,
-.vp-doc a:hover,
-.vp-doc a:active {
-  text-decoration: underline;
-}
-
-.vp-doc th, .vp-doc td {
-  padding: 6px 10px;
-  border: 1px solid #8882;
-}
-
-/* h3 breaks SEO => replaced with h2 with the same size */
-.home-content h2 {
-  margin-top: 2rem;
-  font-size: 1.35rem;
-  border-bottom: none;
-  margin-bottom: 0;
-}
-
-img.resizable-img {
-  width: unset;
-  height: unset;
-}
-
-.VPTeamMembersItem.medium .profile .data .affiliation {
-  min-height: unset;
-}
-.VPTeamMembersItem.medium .profile .data .desc {
-  min-height: unset;
-}
-/* fix height ~ 2 lines of text: 3 cards per row */
-@media (min-width: 648px) {
-  .VPTeamMembersItem.medium .profile .data .affiliation {
-    min-height: 4rem;
-  }
-  .VPTeamMembersItem.medium .profile .data .desc {
-    min-height: 4rem;
-  }
-}
-
-/* fix height ~ 2 lines of text: 3 or more cards per row */
-.VPTeamMembersItem.small .profile .data .affiliation {
-  min-height: 3rem;
-}
-.VPTeamMembersItem.small .profile .data .desc {
-  min-height: 3rem;
-}
-
-/* fix height ~ 3 lines of text: 4 cards per row */
-@media (min-width: 1064px) and (max-width: 1143px) {
-  .VPTeamMembersItem.small .profile .data .affiliation {
-    min-height: 4rem;
-  }
-  .VPTeamMembersItem.small .profile .data .desc {
-    min-height: 4rem;
-  }
-}
-/* fix height ~ 3 lines of text: 3 cards per row */
-@media (min-width: 815px) and (max-width: 875px) {
-  .VPTeamMembersItem.small .profile .data .affiliation {
-    min-height: 4rem;
-  }
-  .VPTeamMembersItem.small .profile .data .desc {
-    min-height: 4rem;
-  }
-}
-/* fix height ~ 3 lines of text: 2 cards per row */
-@media (max-width: 612px) {
-  .VPTeamMembersItem.small .profile .data .affiliation {
-    min-height: 4rem;
-  }
-  .VPTeamMembersItem.small .profile .data .desc {
-    min-height: 4rem;
-  }
-}
-/* fix height: one card per row */
-@media (max-width: 568px) {
-  .VPTeamMembersItem.small .profile .data .affiliation {
-    min-height: unset;
-  }
-  .VPTeamMembersItem.small .profile .data .desc {
-    min-height: unset;
-  }
+:root {
+  --vp-carbon-ads-text-color: var(--vp-c-text-1);
+  --vp-carbon-ads-poweredby-color: var(--vp-c-text-2);
+  --vp-carbon-ads-bg-color: var(--vp-c-bg-soft);
+  --vp-carbon-ads-hover-text-color: var(--vp-c-brand);
+  --vp-carbon-ads-hover-poweredby-color: var(--vp-c-text-1);
 }
 /* .vitepress\theme\style\var.css */
 /* 提示框背景颜色 */
@@ -298,3 +386,54 @@ a{
 .VPFooter[data-v-7cd81ce4] {
   border: none;
 } 
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.font.im/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6K6MmBp0u-zK4.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.font.im/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6D6MmBp0u-zK4.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.font.im/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6I6MmBp0u-zK4.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.font.im/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6J6MmBp0u-zK4.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.font.im/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+span.clip{
+  font-family: 'Pacifico', cursive;
+
+}
+
+span[data-v-11d16375]{
+  font-family: 'Pacifico', cursive;
+  color: #2b74e2;
+}

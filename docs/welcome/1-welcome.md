@@ -29,10 +29,6 @@
 
 友情链接
 - [猫狗小铺](https://catdog-xiaopu.com)
-
-Logo 来源
-- [Vitest](https://vitest.dev/)
-
 特别鸣谢
 - [Republic Of Lunar](/)
 - 在看文档的你！

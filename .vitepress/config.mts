@@ -16,7 +16,7 @@ export default defineConfig({
       pattern:
         "https://github.com/lunarlands/lunarlands.github.io/edit/main/:path",
     },
-    logo: "https://vitest.dev/logo-shadow.svg",
+    logo: "https://arch.icekylin.online/images/hero.svg",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "主页", link: "/" },
