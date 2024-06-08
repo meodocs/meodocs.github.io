@@ -437,3 +437,7 @@ span[data-v-11d16375]{
   font-family: 'Pacifico', cursive;
   color: #2b74e2;
 }
+
+*{
+  list-style: none;
+}
