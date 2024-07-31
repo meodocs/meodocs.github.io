@@ -56,6 +56,10 @@ export default defineConfig({
             text: "终端",
             link: "/docs/arch/5-shell.md",
           },
+          {
+            text: "镜像源",
+            link: "/docs/6-Switch-the-China-source.md",
+          },
         ],
       },
     ],
