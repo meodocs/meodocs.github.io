@@ -3,8 +3,9 @@
 ### 1. 本站网址
 | 基于 | 网址 |
 | --- | --- |
-| Github Pages | https://lunarlands.github.io |
+| Github Pages（已删除） | https://lunarlands.github.io |
 | Cloudflare Pages | https://lunars.pages.dev | 
+| Github Pages（由LinuxWin托管） | https://linuxwin232.github.io/ROL-DOCS |
 ### 2. 本站源代码 
 :::tip 注意
 以下内容的 github.com 已经启用了镜像站 (mirror.ghproxy.com)。海外用户请自行替换。
