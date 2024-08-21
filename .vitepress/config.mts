@@ -2,8 +2,8 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Republic Of Lunar",
-  description: "Republic Of Lunar",
+  title: "LinuxWin",
+  description: "LinuxWin",
   themeConfig: {
     search: {
       provider: "local",
