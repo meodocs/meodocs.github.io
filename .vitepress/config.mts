@@ -10,56 +10,66 @@ export default defineConfig({
     },
     footer: {
       message: "未经过作者同意并公示, 严禁复制内容。",
-      copyright: "Copyright © 2024 Republic Of Lunar",
+      copyright: "Copyright © 2024 LinuxWin",
     },
     editLink: {
       pattern:
-        "https://github.com/lunarlands/lunarlands.github.io/edit/main/:path",
+        "https://github.com/meodocs/meodocs.github.io/edit/main/:path",
     },
-    logo: "https://arch.icekylin.online/images/hero.svg",
+    logo: "https://gcore.jsdelivr.net/gh/LinuxWin232/cdn@main/logo.png",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "主页", link: "/" },
-      { text: "Arch Linux", link: "/docs/arch/arch.md" },
+      { text: "博客", link: "https://meoblog.pages.dev" },
     ],
 
     sidebar: [
       {
-        text: "Chapter I",
+        text: "Welcome",
         collapsed: false,
         items: [
-          { text: "欢迎", link: "/docs/welcome/1-welcome.md" },
-          { text: "关于", link: "/docs/welcome/2-about.md" },
+          { text: "欢迎", link: "/docs/welcome/1.md" },
         ],
       },
       {
+        text: "Chapter I",
+        collapsed: false,
+        items: [
+          {
+            text: "什么是WinPE",
+            link: "/docs/winpe/1.md",
+          },
+          {
+            text: "WinPE都有哪些",
+            link: "/docs/winpe/2.md",
+          },
         text: "Chapter II",
         collapsed: false,
         items: [
           {
-            text: "Arch Linux 是什么?",
-            link: "/docs/arch/1-what_is_arch.md",
+            text: "什么是ubuntu",
+            link: "/docs/ubuntu/1.md",
           },
           {
-            text: "Arch Linux 真的适合我吗?",
-            link: "/docs/arch/2-arch_yes.md",
+            text: "什么是kde gnome xfce",
+            link: "/docs/ubuntu/2.md",
           },
           {
-            text: "安装教程",
-            link: "/docs/arch/3-install_arch.md",
+            text: "什么是Ubuntu衍生版",
+            link: "/docs/ubuntu/3.md",
           },
           {
-            text: "输入法",
-            link: "/docs/arch/4-input.md",
+            text: "什么是基于ubuntu的发行版",
+            link: "/docs/ubuntu/4.md",
           },
           {
-            text: "终端",
-            link: "/docs/arch/5-shell.md",
+            text: "我该怎么样美化Ubuntu的终端",
+            link: "/docs/ubuntu/5.md",
           },
         ],
       },
     ],
 
-    socialLinks: [{ icon: "github", link: "https://github.com/lunarlands" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/meodocs/meodocs.github.io/" }],
   },
 });
