@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 阅读
-      link: /docs/welcome/1-welcome.md
+      link: /docs/welcome/1.md
 
 features:
   - title: 《论语·学而》
