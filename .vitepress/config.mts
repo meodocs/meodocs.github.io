@@ -43,6 +43,8 @@ export default defineConfig({
             text: "WinPE都有哪些",
             link: "/docs/winpe/2.md",
           },
+      },
+      {
         text: "Chapter II",
         collapsed: false,
         items: [
