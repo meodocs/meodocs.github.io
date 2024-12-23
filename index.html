@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN" class="mdui-theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    <meta name="keywords" content="哔哩终端,哔哩哔哩,b站,手表,手表b站,手表版哔哩哔哩,智能手表,哔哩终端手表版,哔哩终端官网,安卓手表,安卓">
+    <meta name="description" content="这里是哔哩终端的官方网站。哔哩终端，一个可以给手表使用的轻量第三方哔哩哔哩安卓客户端，最低支持安卓4.2，软件完全免费">
+    
+     <link rel="shortcut icon" href="static/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdui/2.1.1/mdui.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdui/2.1.1/mdui.global.js"></script>
+    <script src="static/check_browser.js"></script>
+    
+    <title>Watch You - 可能是知名度最低的手表软件站</title>
+</head>
+<body>
+    <div style="position: relative;overflow: hidden">
+    <mdui-top-app-bar style="position: relative;">
+      <mdui-top-app-bar-title>Watch You</mdui-top-app-bar-title>
+      <div style="flex-grow: 1"></div>
+      <mdui-button-icon icon="download" href="#last_v"></mdui-button-icon>
+      <mdui-button-icon icon="home" href="https://watchyou.jsd.heqia.top"></mdui-button-icon>
+    </mdui-top-app-bar>
+        <div style="margin-top: 1.5rem;overflow: auto;min-height: 70vh;">
+            <div style="display: flex;justify-content: center;text-align: center;">
+                <img src="static/icon.png" width="76" height="76">            </div>
+                <div style="display: flex;justify-content: center;text-align: center;">
+                <p>
+                    永远不要熄灭心中的火，哪怕别人只看见烟。
+                </p>
+            </div>
+            <div style="display: flex;justify-content: center;text-align: center;">
+              <mdui-button variant="filled" href="https://www.123684.com/s/iQ9Ijv-BQIU3"><mdui-icon name="download"></mdui-icon>前往下载站</mdui-button>
+            </div>
+            <div style="display: flex;justify-content: center;text-align: center;">
+              <mdui-card clickable variant="filled" style="width: 280px;min-height: 150px;margin-top: 1rem;">
+                <h3 style="text-align: center;">加入QQ群</h3>
+                <p>交流一群：<strong onclick="copy_text(676078584);">676078584</strong></p>
+                <p>交流二群：<strong onclick="copy_text(1012664943);">1012664943</strong></p>
+                <h5>*点击复制</h5>
+              </mdui-card>
+            </div>  
+            <div style="display: flex;justify-content: center;">
+              <mdui-card variant="filled" style="width: 280px;min-height: 50px;margin-top: 1rem;text-align: center;padding: 6px;" clickable>
+                <h3>开发团队</h3>
+                <mdui-list style="padding: 2px;margin-top: -8px;">
+                    <mdui-list-item>
+                        LinuxWin232
+                        <mdui-avatar slot="icon" src="http://q.qlogo.cn/headimg_dl?dst_uin=3544492278&spec=640&img_type=jpg"></mdui-avatar>
+                        <span slot="description">计划发起人，资源管理人</span>
+                    </mdui-list-item>
+                </mdui-list>
+        <script>
+            mdui.setColorScheme('#ffdfe9');;
+            load_last_version();
+            load_version_list();
+            load_announcement_list();
+            load_friendship_link_list();
+            
+            
+            function copy_text(text){
+            navigator.clipboard.writeText(text).then(() => {
+                mdui.snackbar({message: "已复制到剪贴板", autoCloseDelay: 1500, closeable: true});
+            },() => {
+                mdui.snackbar({message: "复制失败", autoCloseDelay: 1500, closeable: true});
+            });
+            }
+        </script>
+    </body>
+</html>
